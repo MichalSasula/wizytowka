@@ -42,18 +42,17 @@ nav li.scallableItem{
 /* header */
 
 header {
-    height: 60rem;
     text-align: center;
 }
 
 header img{
     width: 100%;
-    height: 70%;
+    height: 40rem;
     object-fit: cover;
 }
 
 header button{
-    margin: 2rem;
+    margin: 0.5rem 2rem;
 }
 
 button{
@@ -66,15 +65,15 @@ button{
 
 /* about section */
 .about {
-    height: 20rem;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 5rem;
     font-size: 2rem;
     padding: 5rem;
     box-sizing: border-box;
+    margin: auto;
 }
 
 
@@ -88,10 +87,17 @@ button{
 }
 
 
-.about ul,div{
+.about ul{
     list-style: none;
     padding: 0 2.5rem;
 }
+
+.about div{
+    list-style: none;
+    padding: 0 2.5rem;
+}
+
+
 
 .yellowTekst{
     color: var(--yellow);
@@ -102,32 +108,76 @@ button{
 }
 
 .shortInfo{
-    width: 20%;
+    width: 20rem;
 }
 
 .longInfo{
-    width: 40%;
+    width: 40rem;
+    max-width: 50rem;
+    flex-grow: 1;
 }
 
 /* offer */
 
 .offer{
-    height: 20rem;
     font-size: 2.5rem;
-    width:80%;
+    width:90%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(5rem,40rem));
+    grid-row-gap: 1rem;
     margin: auto;
     justify-content: center;
 }
 
 .offerBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 3rem;
+    text-align: center;
 }
 
 
+
+/* gallery */
+
+.gallery{
+    display: grid;
+    grid-template: auto 30rem 30rem / repeat(6,1fr);
+    grid-template-areas:
+        "galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader"
+        "img1 img1 img2 img2 img3 img3"
+        "img4 img4 img4 img5 img5 img6"
+}
+
+.galleryHeader{
+    grid-area: galleryHeader;
+    text-align: center;
+}
+
+.img1{
+    grid-area: img1;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.img4{
+    grid-area: img4;
+}
+
+.img5{
+    grid-area: img5;
+}
+
+.img6{
+    grid-area: img6;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
