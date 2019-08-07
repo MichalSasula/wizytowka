@@ -1,5 +1,6 @@
 :root{
     --yellow: #FFC53D;
+    --orange: #FF9A3D;
     font-size: 10px;
 }
 
@@ -7,9 +8,6 @@
     font-size: 10px;
 }
 
-p {
-    margin: 0 10px;
-}
 
 /* nawigacja */
 
@@ -115,6 +113,7 @@ button{
     width: 40rem;
     max-width: 50rem;
     flex-grow: 1;
+    text-align: justify;
 }
 
 /* offer */
@@ -181,5 +180,80 @@ button{
     object-fit: cover;
 }
 
-/* drobna zmiana */
+/* contact form */
 
+.concactForm{
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto;
+}
+
+.concactHeader{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    text-align:center;
+}
+
+.concactFormInfo{
+    grid-area: 2 / 1 / span 1 / span 1;
+    background: var(--orange); 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5rem; 
+    color: white;
+}
+
+.request{
+    width: 50%;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.request p{
+    margin-top: 1rem;
+}
+
+.concactSocialMedia{
+    width: 50%;
+    margin-top: 1rem;
+}
+
+p.icons{
+    text-align: justify
+}
+
+.concactFormUserData{
+    /* border: 2px solid red; */
+    grid-area: 2 / 2 / span 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 5rem 5rem 5rem;
+    
+}
+
+
+/* .concactFormUserData form{
+    width: 100%;
+} */
+
+form > *{
+    width: 100%;
+    border-radius: 15px;
+    resize: none;
+}
+
+input[type='text']{
+    height: 3rem;
+}
+
+.concactFormInfo a{
+    color: white;
+}
+
+.shadow{
+    grid-area: 2 / 1 / -1 / -1;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    z-index: -1;
+}
