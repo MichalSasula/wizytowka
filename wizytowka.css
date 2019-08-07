@@ -83,7 +83,7 @@ header {
 
 header h1{
     color: var(--yellow);
-    font-size: 10rem;
+    font-size: 9rem;
 }
 
 header h2{
@@ -383,6 +383,9 @@ footer{
 
 /* responsive */
 
+
+
+
 @media only screen and (max-width: 700px){
     nav ul{
         display: flex;
@@ -413,6 +416,28 @@ footer{
     } */
 
     header h1{
-        font-size: calc(0.5 * 10rem);
+        font-size: 7rem;
     }
+    .headerPhoto{
+        padding: 0 20rem 0 10rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    header h1{
+        font-size: 5.0rem;
+    }
+
+    header h2{
+        font-size: 3.2rem;
+    }
+
+    .headerPhoto{
+        padding: 0 10rem 0 1rem;
+    }
+
+    .headerPhoto{
+        align-content: flex-end;
+    }
+    
 }
