@@ -179,7 +179,7 @@ button:hover{
 }
 
 .longInfo{
-    width: 40rem;
+    min-width: 35rem;
     max-width: 50rem;
     flex-grow: 1;
     text-align: justify;
@@ -459,7 +459,7 @@ footer{
 .concactHeader{
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    /* padding: 0 10rem; */
+    padding: 0 2rem;
     text-align: center;
 }
 
@@ -505,10 +505,7 @@ footer{
 
 .concactFormUserData{
     grid-area: 3 / 1 / span 1 / span 1;
-    /* text-align: center; */
-    /* display: flex;
-    flex-direction: column;
-    padding: 0rem 5rem 5rem 5rem; */
+    padding: 0rem 2rem 2rem 2rem;
     
 }
 
