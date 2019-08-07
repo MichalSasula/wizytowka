@@ -10,12 +10,13 @@
     <meta name="keywords" content="cat, visit card, visiting card, business card">
     <link href="wizytowka.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6066a92676.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Ubuntu:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wraper">
         <nav>
             <ul>
-                <li class="scallableItem"><b>DEV  </b><i class="fas fa-desktop"></i></li>
+                <li class="scallableItem bigLetterSpaced"><b>DEV  </b><i class="fas fa-desktop"></i></li>
                 <li>About me</li>
                 <li>Skills</li>
                 <li >Portfolio</li>
@@ -23,12 +24,16 @@
             </ul> 
         </nav>
         <header>
-            <img src="img/headerPhoto.jpg" alt="Header photo black cat">
-            <h1>Why cats rule the Internet</h1>
+            <div class='headerPhoto'>
+                    <h1>Welcome!</h1>
+                    <h2>My name is Designer.</h2>   
+            </div>
+            <h3>Why cats rule the Internet</h3>
             <button type="button">Click Me!</button>
             <button type="button">Click Me!</button>
         </header>
         <section class="about">
+            <h1>About me</h1>
             <img src="img/grumpyCat.jpg" alt="Grumpy cat photo" class="aboutPhoto">
             <ul class ="shortInfo yellowSeparator">
                 <li>Full Name: <span class="yellowTekst">Designer</span></li>
@@ -42,6 +47,7 @@
             </div>
         </section>
         <section class='offer'>
+            <div class="offerHeader"><h1>Our offer</h1></div>
             <div class='yellowSeparator offerBox'>
                     <i class="fas fa-cat fa-2x"></i>
                     <p class="yellowTekst">Cokolwiek</p>
@@ -93,14 +99,19 @@
             <div class="concactFormUserData">
                 <h1> Let's start!</h1>
                 <form action='metoda.php' method="post">
-                    <input type='text' placeholder="Imię"><br>
+                    <input type='text' placeholder="Name"><br>
                     <input type='text' placeholder="Your e-mail adress"><br>
                     <input type='text' placeholder="Topic"><br>
-                    <textarea rows=25% cols=100%  placeholder="Message"></textarea>
+                    <p>Type your message:</p>
+                    <textarea rows=25% cols=100% ></textarea>
                 </form>
+                <button type="button">Send</button>
             </div>
             <div class="shadow"></div>
         </section>
+        <footer>
+            <p>Copyrights © Michał Sasuła</p>
+        </footer>
 
     </div>
 </body>

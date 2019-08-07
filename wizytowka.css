@@ -6,6 +6,8 @@
 
 .wraper {
     font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.02rem;
 }
 
 
@@ -19,6 +21,7 @@ nav {
 }
 
 
+
 nav ul{
     display: flex;
     flex-direction: row;
@@ -26,6 +29,12 @@ nav ul{
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
+    
+}
+
+
+.bigLetterSpaced{
+    letter-spacing: 0.15rem;
 }
 
 nav li{
@@ -36,29 +45,53 @@ nav li.scallableItem{
     flex-grow: 1;
 }
 
+h1{
+    font-weight: bold;
+}
 
 /* header */
 
 header {
-    text-align: center;
+    text-align: center; 
 }
 
-header img{
-    width: 100%;
+.headerPhoto{
+    background-image: url("img/headerPhoto.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
     height: 40rem;
-    object-fit: cover;
+    box-sizing: border-box;
+    padding: 10rem 30rem 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+header h1{
+    color: var(--yellow);
+}
+
+header h2{
+    color: white;
+}
+
+header h3{
+    font-size: 2rem;
+}
+
 
 header button{
     margin: 0.5rem 2rem;
 }
 
 button{
-    padding: 1rem;
+    padding: 2rem;
     background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
     border-radius: 15px;
     border:none;
     min-width: 100px;
+    font-weight: bold;
 }
 
 button:hover{
@@ -80,6 +113,11 @@ button:hover{
     margin: auto;
 }
 
+.about h1{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    flex-grow: 1;
+}
 
 .about img{
     width: 15rem;
@@ -120,6 +158,7 @@ button:hover{
     max-width: 50rem;
     flex-grow: 1;
     text-align: justify;
+    letter-spacing: 0.04rem;
 }
 
 /* offer */
@@ -134,8 +173,17 @@ button:hover{
     justify-content: center;
 }
 
+.offerHeader{
+    grid-column: 1 / span 3;
+}
+
+.offerHeader h1{
+    text-align: center;
+}
+
 .offerBox{
     text-align: center;
+    letter-spacing: normal;
 }
 
 
@@ -148,8 +196,11 @@ button:hover{
     grid-template-areas:
         "galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader"
         "img1 img1 img2 img2 img3 img3"
-        "img4 img4 img4 img5 img5 img6"
+        "img4 img4 img4 img5 img5 img6";
+    font-size: 2rem;
+    margin-bottom: 5rem;
 }
+
 
 .galleryHeader{
     grid-area: galleryHeader;
@@ -198,7 +249,7 @@ button:hover{
 .concactHeader{
     grid-column: 1 / -1;
     grid-row: 1 / span 1;
-    text-align:center;
+    padding: 0 10rem;
 }
 
 .concactFormInfo{
@@ -209,10 +260,12 @@ button:hover{
     flex-direction: column;
     padding: 5rem; 
     color: white;
+    letter-spacing: 0.04rem;
 }
 
 .request{
     width: 50%;
+    max-width: 20rem;
     margin-top: 1rem;
     text-align: justify;
 }
@@ -231,12 +284,15 @@ p.icons{
 }
 
 .concactFormUserData{
-    /* border: 2px solid red; */
     grid-area: 2 / 2 / span 1 / span 1;
     display: flex;
     flex-direction: column;
     padding: 0rem 5rem 5rem 5rem;
     
+}
+
+.concactFormUserData button{
+    align-self: flex-end;
 }
 
 
@@ -253,7 +309,14 @@ form > *{
 
 input[type='text']{
     height: 3rem;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: normal;
 }
+
+
+
+textarea[type='']
 
 .concactFormInfo a{
     color: white;
@@ -263,4 +326,13 @@ input[type='text']{
     grid-area: 2 / 1 / -1 / -1;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
     z-index: -1;
+}
+
+/* footer */
+
+footer{
+    font-size: 2rem;
+    color:#A0A0A0;
+    text-align: center;
+    margin-top: 2rem;
 }
